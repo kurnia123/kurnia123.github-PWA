@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="card-content">
+        <div class="row">
+            <div class="col s12 center-align">
+                <span class="flow-text"><h4><b>Matchday ${article.matchday}</b></h4></span>
+                <span class="flow-text" style="color:#95a5a6;"><h6>${article.utcDate.substring(0,10)}</h6></span>
+                <div class="divider"></div>
+            </div>
+
+            <div class="col s4 center-align">
+                <div class="section" style="color:#95a5a6;">Home Team</div>
+                <div class="divider"></div>
+                <div class="sectoin">
+                    <span class="flow-text center-align"><b>${article.homeTeam.name}</b></span>
+                </div>
+                <div class="section">
+                    <a href="./detail/detail.html?id=${article.homeTeam.id}">
+                        <img src="${urlImageHomeTeam}" alt="image" style="height: 100px;">
+                    </a>
+                </div>
+                <div class="section">
+                    <span class="flow-text ">${article.score.fullTime.homeTeam}</span>
+                </div>
+            </div>
+            <div class="col s4 center-align">
+                <br>
+                <br>
+                <h3><b>VS</b></h3>
+            </div>
+            <div class="col s4 center-align">
+                <div class="section" style="color:#95a5a6;">Away Team</div>
+                <div class="divider"></div>
+                <div class="sectoin">
+                    <span class="flow-text "><b>${article.awayTeam.name}</b></span>
+                </div>
+                <div class="section">
+                    <a href="./detail/detail.html?id=${article.awayTeam.id}">
+                        <img src="${urlImageAwayTeam}" alt="image" style="height: 100px;">
+                    </a>
+                </div>
+                <div class="section">
+                    <span class="flow-text ">${article.score.fullTime.awayTeam}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

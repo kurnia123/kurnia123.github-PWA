@@ -1,0 +1,21 @@
+{
+    "name":"Footbacl App",
+    "short_name":"FApp",
+    "description":"Aplikasi informasi sepak bola",
+    "start_url":"./index.html",
+    "display":"standalone",
+    "background_color":"#00897B",
+    "theme_color":"#00897B",
+    "icons":[
+        {
+            "src":"assets/logo512.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        },
+        {
+            "src":"assets/logo192.png",
+            "sizes":"192x192",
+            "type":"image/png"
+        }
+    ]
+  }
